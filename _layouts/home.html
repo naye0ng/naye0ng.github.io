@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="home">
+  <!-- theme_settings.header_text 값이 없다면 이 부분 보여지지 않음 -->
   {% if site.theme_settings.header_text %}
   <div class="call-out"
   style="background-image: url('{{ site.baseurl }}/{{ site.theme_settings.header_text_feature_image }}')">
@@ -14,11 +15,11 @@ layout: default
     {% for post in paginator.posts %}
     <div class="post-teaser">
       <header>
-        <h1>
+        <h2 class='mb-0'>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title }}
           </a>
-        </h1>
+        </h2>
         <p class="meta">
           {{ post.date | date: "%B %-d, %Y" }}
         </p>
