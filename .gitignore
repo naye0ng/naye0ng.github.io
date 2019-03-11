@@ -13,4 +13,3 @@ _site/
 .jekyll
 Gemfile
 Gemfile.lock
-theme.gemspec
