@@ -25,7 +25,11 @@ layout: default
         </p>
       </header>
       <div class="excerpt">
-        {{ post.excerpt }}
+        {% if post.excerpt.size > 80 %}
+          {{ post.excerpt | strip_html | strip_newlines }}
+        {% endif %}
+      </div>
+      <div>
         <a class="button" href="{{ post.url | relative_url }}">
           {{ site.theme_settings.str_continue_reading }}
         </a>

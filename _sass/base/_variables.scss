@@ -15,7 +15,7 @@ $border-color: rgba(0, 0, 0, 0.1); // rgba recommended if using feature images
 
 // Typography colours
 $text-color: #383838;
-$link-color: #1ABC9C;
+$link-color: #4F86C6;//#1ABC9C;
 $selection-color: #D4D4D4; // visible when highlighting text
 
 // Tags color
@@ -35,3 +35,7 @@ $feature-image-size: cover; // options include "cover", "contain", "auto"
 $header-desc-background-color: #1ABC9C;
 $header-desc-text-color: #FFF;
 $header-desc-link-color: #02453D;
+
+/***** NAYEONG CUSTOM VALUES *****/
+// padding
+$padding-2per: 2%;

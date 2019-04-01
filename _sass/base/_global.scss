@@ -6,12 +6,6 @@
 figure {
   margin: 0;
 }
-figure.highlight{
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 1px 10px;
-  margin-bottom: 1em;
-}
 // For correct line number width in Github Gists
 .gist table tbody tr td {
   box-sizing: content-box;
@@ -134,7 +128,19 @@ img[align=right] {
   margin-left: 3%;
 }
 
-// Custom Style
+/***** NAYEONG CUSTOM STYLE *****/
 .mb-0 {
   margin-bottom:0px;
+}
+.display-none{
+  display: none;
+}
+.post-link:hover {
+  color: $link-color;
+}
+
+// post.html
+.highlight pre {
+  padding: $padding-2per;
+  border-radius: 0.5%;
 }

@@ -81,3 +81,6 @@ theme: theme
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# Custom Posting excerpt_seperator
+excerpt_seperator:  <!--break-->
