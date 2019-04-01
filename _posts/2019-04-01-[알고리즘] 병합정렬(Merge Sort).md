@@ -19,10 +19,10 @@ feature-img: "assets/img/sample_feature_img.png"
 [예]{69, 10, 30, 2, 16, 8, 31, 22}를 병합정렬하는 과정
 
 (분할 단계) 전체 자료 집합에 대하여, 최소 크기의 부분집합이 될때까지 분할 작업을 계속한다.
-![MergeSort-Divid]({{ site.baseurl }}/assets/img/mergesort01.png)
+![MergeSort-Divid]({{ site.baseurl }}/assets/img/mergesort01.PNG)
 
 (병합단계) 2개의 부분집합을 정렬하면서 하나의 집합으로 병합
-![MergeSort-Merge]({{ site.baseurl }}/assets/img/mergesort02.png)
+![MergeSort-Merge]({{ site.baseurl }}/assets/img/mergesort02.PNG)
 
 
 
@@ -36,32 +36,32 @@ n 개의 데이터를 병합정렬하는 시간을 T(n)이라 하면, 병합정�
 
 ## 2. 병합정렬 구현
 
-```python
+{% highlight python %}
 def mergeSort(arr):
-    if len(arr) <= 1:
-        return arr
-    mid = len(arr) // 2
-    left = mergeSort(arr[:mid])
-    right = mergeSort(arr[mid:])
-    return merge(left, right)
+​    if len(arr) <= 1:
+​        return arr
+​    mid = len(arr) // 2
+​    left = mergeSort(arr[:mid])
+​    right = mergeSort(arr[mid:])
+​    return merge(left, right)
 
 def merge(left, right):
-    result = []
-    # 한쪽이 0이 되면 비교는 끝내고, 남은 부분을 붙여주기만 하면 된다.
-    while len(left) > 0 and len(right) > 0:
-        if left[0] <= right[0]:
-            result.append(left.pop(0))
-        else:
-            result.append(right.pop(0))
-    if len(left) > 0:
-        result.extend(left)
-    elif len(right) > 0:
-        result.extend(right)
-    return result
+​    result = []
+​    # 한쪽이 0이 되면 비교는 끝내고, 남은 부분을 붙여주기만 하면 된다.
+​    while len(left) > 0 and len(right) > 0:
+​        if left[0] <= right[0]:
+​            result.append(left.pop(0))
+​        else:
+​            result.append(right.pop(0))
+​    if len(left) > 0:
+​        result.extend(left)
+​    elif len(right) > 0:
+​        result.extend(right)
+​    return result
 
 arr = [69, 10, 30, 2, 16, 8, 31, 22]
 print(mergeSort(arr))
-```
+{% endhighlight %}
 
 
 
@@ -71,7 +71,7 @@ print(mergeSort(arr))
 
 merge를 호출하기 전에 left[-1]과 right[0]을 비교하여 left[-1] < right[0] 라면, merge를 수행하지 않고 left+right를 반환해 주는 것으로 merge과정을 줄일 수 있다.
 
-```python
+{% highlight python %}
 def mergeSort(arr):
     if len(arr) <= 1:
         return arr
@@ -80,7 +80,7 @@ def mergeSort(arr):
     right = mergeSort(arr[mid:])
     if left[-1] < right[0]: return left + right
     return merge(left, right)
-```
+{% endhighlight %}
 
 #### (2). 배열 대신 인덱스 활용
 
