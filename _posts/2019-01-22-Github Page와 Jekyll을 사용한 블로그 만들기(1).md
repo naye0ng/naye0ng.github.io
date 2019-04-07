@@ -54,7 +54,7 @@ $nano ~/.bash_profile
 
 아래 내용을 복사사여 저장한 후, 쉘을 종료하고 새로 열어준다.
 
-{% highlight text %}
+{% highlight shell %}
 
 # rbenv 설정
 export PATH="$HOME/.rbenv/bin:$PATH"
