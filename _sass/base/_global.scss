@@ -121,6 +121,7 @@ a {
 iframe, img, embed, object, video {
   max-width: 100%;
 }
+
 img[align=left] {
   margin-right: 3%;
 }
@@ -143,4 +144,9 @@ img[align=right] {
 .highlight pre {
   padding: $padding-2per;
   border-radius: 0.5%;
+}
+
+// image shadow effect
+img {
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
 }
