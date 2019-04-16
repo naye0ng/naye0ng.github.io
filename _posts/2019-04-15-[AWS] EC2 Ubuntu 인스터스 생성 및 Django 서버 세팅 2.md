@@ -148,10 +148,19 @@ Quit the server with CONTROL-C.
 이제 어디에서든 ALLOWED_HOSTS에 설정해준 주소와 8000번 포트를 이용해 Django 서비스에 접속 할 수 있다.
 <br>
 https://ec2-{본인의 EC2 DNS 참고}.compute.amazonaws.com:8000로 접속했을 때 아래와 같은 화면이 나온다면 성공이다.
-![First Django Start]({{ site.baseurl }}/assets/img/firstDjango.PNG)
+![First Django Start]({{ site.baseurl }}/assets/img/firstDjango.png)
 
+만약 runserver 명령어 실행시 아래와 같은 에러가 뜬다면 migrate 하고 다시 서버를 실행시키자.
+![runserverErr]({{site.baseurl}}/assets/img/runserver.png)
+
+{% highlight shell %}
+$python manage.py migrate
+{% endhighlight %}
+
+<br>
 <hr>
 <br>
+
 #### [추가] 80번 포트로 Django 실행하기
 Django는 기본적으로 8000번 포트로 실행되는데, 80 포트로 접속을 허용하고 싶다면 아래와 같은 명령어를 사용하면 된다.
 {% highlight shell %}
