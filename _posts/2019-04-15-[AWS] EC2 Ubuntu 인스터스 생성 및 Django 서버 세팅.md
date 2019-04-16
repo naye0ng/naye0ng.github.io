@@ -13,14 +13,13 @@ EC2 Ubuntu 인스턴스를 생성하고, root계정을 활성화하여 접속하
 ### 1). 인스턴스 선택
 EC2 Dashboard > Instance > Lalunch Instance 클릭한 후, Ubuntu를 검색하면 아래와 같은 화면이 나타난다.
 
-![Lalunch Instance]({{ site.baseurl }}/assets/img/instance01.PNG)
+![LalunchInstance]({{ site.baseurl }}/assets/img/instance01.PNG)
 
 <br>
 
 select 버튼을 누르고 아래와 같이 free tier 인스턴스를 선택하고 next버튼을 누른다.
 
-![Lalunch Instance]({{ site.baseurl }}/assets/img/instance02.PNG)
-
+![LalunchInstance]({{ site.baseurl }}/assets/img/instance02.PNG)
 <br>
 
 ### 2). 보안그룹 설정
@@ -35,7 +34,7 @@ select 버튼을 누르고 아래와 같이 free tier 인스턴스를 선택하�
 ### 3). Key pair 생성
 키페어는 ssh를 통해 EC2 인스턴스에 접속 할 때 사용되며, 이때 생성되는 private key는 한 번만 다운로드 가능하다.(이미 사용하고 있는 key를 그대로 사용하는 것도 가능)
 
-![Lalunch Instance]({{ site.baseurl }}/assets/img/instance04.PNG)
+![LalunchInstance]({{ site.baseurl }}/assets/img/instance04.PNG)
 
 <br>
 
@@ -52,7 +51,7 @@ ubuntu@{ip 정보}:~$
 {% endhighlight %}
 Public DNS는 instance 메뉴에서 확인 가능하다.
 
-![Lalunch Instance]({{ site.baseurl }}/assets/img/instance05.PNG)
+![LalunchInstance]({{ site.baseurl }}/assets/img/instance05.PNG)
 
 <br> 
 
