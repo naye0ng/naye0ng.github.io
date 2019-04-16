@@ -60,13 +60,14 @@ theme_settings:
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic | Nanum+Gothic:400,700&subset=korean"
+  google_fonts: #"Source+Sans+Pro:400,700,700italic,400italic | Nanum+Gothic:400,700&subset=korean"
   
+
   # Post navigation
   post_navigation: True
 
 # PAGINATION
-paginate: 5
+paginate: 100
 paginate_path: "blog/page:num"
 
 # BUILD SETTINGS
