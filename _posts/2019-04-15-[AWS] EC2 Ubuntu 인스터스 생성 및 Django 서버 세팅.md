@@ -13,20 +13,20 @@ EC2 Ubuntu 인스턴스를 생성하고, root계정을 활성화하여 접속하
 ### 1). 인스턴스 선택
 EC2 Dashboard > Instance > Lalunch Instance 클릭한 후, Ubuntu를 검색하면 아래와 같은 화면이 나타난다.
 
-![LalunchInstance]({{ site.baseurl }}/assets/img/instance01.PNG)
+![Lalunch_Instance1]({{ site.baseurl }}/assets/img/instance01.PNG)
 
 <br>
 
 select 버튼을 누르고 아래와 같이 free tier 인스턴스를 선택하고 next버튼을 누른다.
 
-![LalunchInstance]({{ site.baseurl }}/assets/img/instance02.PNG)
+![Lalunch_Instance2]({{ site.baseurl }}/assets/img/instance02.PNG)
 <br>
 
 ### 2). 보안그룹 설정
 기본적으로 인스턴스 생성시 ssh 접속을 위한 22번 포트는 설정되어 있다.
 이 외에 사용자가 Django 웹에 접근할 수 있도록 하기 위해 http 접속을 위한 80포트와 Django의 8000포트를 추가로 열어줘야한다.
 
-![Lalunch Instance]({{ site.baseurl }}/assets/img/instance03.PNG)
+![Lalunch_Instance3]({{ site.baseurl }}/assets/img/instance03.PNG)
 &#8251; *runserver를 통해 8000포트가 아닌 80포트로 연결하는 것도 가능하다.*
 
 <br>
@@ -34,7 +34,7 @@ select 버튼을 누르고 아래와 같이 free tier 인스턴스를 선택하�
 ### 3). Key pair 생성
 키페어는 ssh를 통해 EC2 인스턴스에 접속 할 때 사용되며, 이때 생성되는 private key는 한 번만 다운로드 가능하다.(이미 사용하고 있는 key를 그대로 사용하는 것도 가능)
 
-![LalunchInstance]({{ site.baseurl }}/assets/img/instance04.PNG)
+![Lalunch_Instance4]({{ site.baseurl }}/assets/img/instance04.PNG)
 
 <br>
 
@@ -51,7 +51,7 @@ ubuntu@{ip 정보}:~$
 {% endhighlight %}
 Public DNS는 instance 메뉴에서 확인 가능하다.
 
-![LalunchInstance]({{ site.baseurl }}/assets/img/instance05.PNG)
+![Lalunch_Instance5]({{ site.baseurl }}/assets/img/instance05.PNG)
 
 <br> 
 

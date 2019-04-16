@@ -13,6 +13,11 @@ Ubuntu기반의 서버에 Django 가상환경(pyenv, virtualenv) 설정 및 서�
 ## 1. Ubuntu에서 pyenv, virtualenv 설치
 Python은 2.x와 3.x버전 사이에 지원하는 기능의 차이가 많아 버전관리 문제가 있다. 그래서 대부분의 python 사용자들은 pyenv와 virtualenv를 사용하여 가상환경을 생성하고 python 버전을 관리한다.
 
+패키지 설치하기 전에 아래와 같이 업데이트를 해주도록 하자.
+{% highlight shell %}
+sudo apt-get update
+{% endhighlight %}
+
 <br>
 
 ### 1). build 패키지 설치
