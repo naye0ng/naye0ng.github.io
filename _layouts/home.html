@@ -14,15 +14,23 @@ layout: default
   <div class="posts">
     {% for post in paginator.posts %}
     <div class="post-teaser">
-      <header>
-        <h2 class='mb-0'>
+      <header>   
+        <h3 class='mb-0'>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title }}
           </a>
-        </h2>
-        <p class="meta">
+        </h3>
+        <span class="meta">
           {{ post.date | date: "%B %-d, %Y" }}
-        </p>
+        </span>
+        &nbsp;
+        <!-- tag 추가 -->
+        {% if post.tags %}
+        {% for tag in post.tags %}
+        <span class='tag_box'>{{ tag }}</span>
+        {% endfor %}
+        {% endif %}
+
       </header>
       <div class="excerpt">
         {% if post.excerpt.size > 80 %}
@@ -30,9 +38,9 @@ layout: default
         {% endif %}
       </div>
       <div>
-        <a class="button" href="{{ post.url | relative_url }}">
+        <!--a class="button" href="{{ post.url | relative_url }}">
           {{ site.theme_settings.str_continue_reading }}
-        </a>
+        </a-->
       </div>
     </div>
     {% endfor %}
