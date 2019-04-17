@@ -4,17 +4,19 @@ title: "Jekyll 블로그의 코드블록에서 liquid 코드 출력하기"
 subtitle: "highlight 메서드 내부에서 liquid 코드 실행 정지하기"
 tags: Jekyll
 author: Nayeong Kim
+comments : True
 ---
 
 <div id='preview' class='display-none'>
-Jekyll로 블로그를 만든 경우, 코드블록에는 highlight메서드를 사용한다. 다른 언어를 코드블록 내부에서 출력하는 경우 문제가 생기지 않지만 코드블록 내에 liquid 언어를 출력할때 아래와 같은 문제가 발생한다.
+Jekyll로 블로그를 만들면 코드블록은 highlight메서드를 사용하여 나타낸다. 다른 언어를 코드블록 내부에서 출력하는 경우 문제가 생기지 않지만 코드블록 내에 liquid 언어를 출력할때 아래와 같은 문제가 발생한다.
 </div>
+
 
 
 
 ### 1 . raw 메서드 : liquid 코드 실행 정지하기
 
-Jekyll로 블로그를 만든 경우, 코드블록에는 highlight메서드를 사용한다. 다른 언어를 코드블록 내부에서 출력하는 경우 문제가 생기지 않지만 코드블록 내에 liquid 언어를 출력할때 아래와 같은 문제가 발생한다.
+Jekyll로 블로그를 만들면 코드블록은 highlight메서드를 사용하여 나타낸다. 다른 언어를 코드블록 내부에서 출력하는 경우 문제가 생기지 않지만 코드블록 내에 liquid 언어를 출력할때 아래와 같은 문제가 발생한다.
 
 ![before]({{ site.baseurl }}/assets/img/beforeRaw.png)
 

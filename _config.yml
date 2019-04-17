@@ -19,7 +19,7 @@ theme_settings:
 
   # Icons
   rss: false
-  email_address: "nayeong_e@naver.com" # Full email address, e.g. "sam@example.com"
+  email_address: "naye0ng.dev@gmail.com" # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
   dribbble:
@@ -42,7 +42,7 @@ theme_settings:
 
   # Scripts
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname: 
+  disqus_shortname: nayeong-blog
   katex: true # Enable if using math markup
   search: false # Enable the search feature
 
