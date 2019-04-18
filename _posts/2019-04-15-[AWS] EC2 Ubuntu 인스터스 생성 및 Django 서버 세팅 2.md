@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Instagram clone] EC2 Ubuntu 인스터스 생성 및 Django 서버 설정 2"
+title: "[AWS] EC2 Ubuntu 인스터스 생성 및 Django 서버 설정 2"
 subtitle: "Ubuntu에 pyenv, virtualenv 설치 및 서버 실행"
 tags: [AWS, Django]
 author: Nayeong Kim

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Instagram clone] EC2 Ubuntu 인스터스 생성 및 Django 서버 설정 1"
+title: "[AWS] EC2 Ubuntu 인스터스 생성 및 Django 서버 설정 1"
 subtitle: "EC2 인스턴스 생성 및 설정"
 tags: [AWS, Django]
 author: Nayeong Kim
