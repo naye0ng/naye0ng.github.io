@@ -46,8 +46,5 @@ Jekyll은 raw 메서드 안에 있는 내용은 자체적으로 이스케이프 
 {% endraw %}
 {% endhighlight %}
 
-
-
 <br>
 
-<br>
