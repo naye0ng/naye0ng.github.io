@@ -4,7 +4,7 @@ title: "[알고리즘] 서로소 집합(Disjoint Set)"
 subtitle: "Python으로 서로소 집합 만들기"
 author: Nayeong Kim
 tags: [Algorithm, Python]
-feature-img: "assets/img/sample_feature_img.png"
+comments : True
 ---
 
 # 서로소 집합(Disjoint Set)

@@ -4,7 +4,7 @@ title: "Jekyll과 Github Page로 블로그 만들기(1)"
 subtitle: "rbenv환경에서 Jekyll 블로그 설치"
 author: Nayeong Kim
 tags: [GitHub, Jekyll]
-feature-img: "assets/img/sample_feature_img.png"
+comments : True
 ---
 
 얼마전에 친구가 안드로이드에서 wav파일 생성하는 법을 묻기에 이전에 정리한 내용과 코드 링크를 보내주었는데, 문득 그동안 정리해왔던 이슈나 공부했던 내용을 다른 사람들과 공유하고 싶다는 생각을 하게 되었다. <br/> 개발을 하다보면 에러를 해결하기 위해, 혹은 원하는 기능을 구현하기 위해서 인터넷의 수많은 글을 참고하게 된다. 그동안 내가 여러 개발자의 글에서 해결책을 찾아 왔듯이, 내 글 또한 다른 사람들에게 도움이 되었으면 한다. 

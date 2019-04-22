@@ -4,6 +4,7 @@ title: "[AWS] EC2 Ubuntu 인스터스 생성 및 Django 서버 설정 2"
 subtitle: "Ubuntu에 pyenv, virtualenv 설치 및 서버 실행"
 tags: [AWS, Django]
 author: Nayeong Kim
+comments : True
 ---
 <div id='preview' class='display-none'>
 Ubuntu기반의 서버에 Django 가상환경(pyenv, virtualenv) 설정 및 서버 실행하기

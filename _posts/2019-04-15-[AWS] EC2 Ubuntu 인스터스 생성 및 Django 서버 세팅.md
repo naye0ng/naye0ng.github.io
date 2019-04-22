@@ -4,6 +4,7 @@ title: "[AWS] EC2 Ubuntu 인스터스 생성 및 Django 서버 설정 1"
 subtitle: "EC2 인스턴스 생성 및 설정"
 tags: [AWS, Django]
 author: Nayeong Kim
+comments : True
 ---
 <div id='preview' class='display-none'>
 EC2 Ubuntu 인스턴스를 생성하고, root계정을 활성화하여 접속하기

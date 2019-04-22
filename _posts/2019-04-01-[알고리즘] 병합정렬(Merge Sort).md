@@ -4,7 +4,7 @@ title: "[알고리즘] 병합정렬(Merge Sort)"
 subtitle: "Python을 사용하여 병합정렬 구현하기"
 author: Nayeong Kim
 tags: [Algorithm, Python]
-feature-img: "assets/img/sample_feature_img.png"
+comments : True
 ---
 <div id='preview' class='display-none'>
 병합정렬이란, 여러 개의 정렬된 자료의 집합을 병합하여 한 개의 정렬된 집합으로 만드는 방식이다. 자료를 최소 단위의 문제까지 나눈 후에 차례대로 정렬(병합)하여 최종 결과를 얻어 낸다.

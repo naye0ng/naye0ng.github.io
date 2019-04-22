@@ -3,6 +3,7 @@ layout: post
 title: "[SKCT] SW직군역량검사"
 subtitle: "[SKCT] SW직군역량검사 대비 개념 정리"
 author: Nayeong Kim
+comments : True
 ---
 
 ## 1. 정렬 알고리즘
