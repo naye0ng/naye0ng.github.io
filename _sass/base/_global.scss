@@ -45,7 +45,7 @@ h3 {
   font-size: 1.5em;
 }
 h4 {
-  font-size: 1.15em;
+  font-size: 1.25em;
 }
 blockquote {
     border-left: 2px solid;
@@ -140,6 +140,14 @@ img[align=right] {
   color: $link-color;
 }
 
+footer {
+  margin-top: 5rem;
+}
+
+thead{
+  background-color: $gray-color;
+}
+
 // post.html
 .highlight pre {
   padding: $padding-2per;
@@ -164,4 +172,22 @@ img {
 // ul Style override
 .task-list {
   list-style-type: none;
+}
+
+// code : text decorator
+.highlighter-rouge{
+  background-color: $gray-color;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 0 5px;
+  margin: 0px;
+  color: #e28f0b;
+}
+
+blockquote {
+  background: $gray-color;
+  border-left: 0em solid #33a9dc;
+  color: rgba(0,0,0,0.5);
+  padding: 15px 20px;
+  font-size: 0.9em;
 }

@@ -1,13 +1,13 @@
 // pygments-css (https://github.com/richleland/pygments-css)
 
 .hll { background-color: #ffffcc }
-.c { color: #999988; font-style: italic } /* Comment */
+.c { color: #c1bb9d; font-style: italic } /* Comment */
 .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .k { color: #000000; font-weight: bold } /* Keyword */
 .o { color: #000000; font-weight: bold } /* Operator */
-.cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.cm { color: #c1bb9d; font-style: italic } /* Comment.Multiline */
 .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
-.c1 { color: #999988; font-style: italic } /* Comment.Single */
+.c1 { color: #c1bb9d; font-style: italic } /* Comment.Single */
 .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
 .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
 .ge { color: #000000; font-style: italic } /* Generic.Emph */
@@ -66,16 +66,16 @@
 // http://jwarby.github.io/jekyll-pygments-themes/languages/python.html 
 .highlight pre { background-color: #272822; }
 .highlight .hll { background-color: #272822; }
-.highlight .c { color: #75715e } /* Comment */
+.highlight .c { color: #c1bb9d; } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
 .highlight .k { color: #66d9ef } /* Keyword */
 .highlight .l { color: #ae81ff } /* Literal */
 .highlight .n { color: #f8f8f2 } /* Name */
 .highlight .o { color: #f92672 } /* Operator */
 .highlight .p { color: #f8f8f2 } /* Punctuation */
-.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cm { color: #c1bb9d;} /* Comment.Multiline */
 .highlight .cp { color: #75715e } /* Comment.Preproc */
-.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .c1 { color: #c1bb9d; } /* Comment.Single */
 .highlight .cs { color: #75715e } /* Comment.Special */
 .highlight .ge { font-style: italic } /* Generic.Emph */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
