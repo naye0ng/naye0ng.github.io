@@ -7,7 +7,7 @@ theme_settings:
   # Meta
   title: Nayeong's Devlog
   avatar: assets/img/avatar.png
-  favicon: assets/favicon.ico
+  favicon: assets/img/logo.png  #favicon.ico
   gravatar: # Email MD5 hash
   description: "A website with blog posts and pages" # used by search engines
 
@@ -67,7 +67,7 @@ theme_settings:
   post_navigation: True
 
 # PAGINATION
-paginate: 100
+paginate: 8
 paginate_path: "blog/page:num"
 
 # BUILD SETTINGS
