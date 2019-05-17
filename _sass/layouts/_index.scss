@@ -23,10 +23,14 @@
     margin-bottom: 0;
     display: inline-block;
     background-size: $feature-image-size;
-    border-bottom: 1px solid $border-color;
+    //border-bottom: 1px solid $border-color;
     p a {
       @extend .body-link;
     }
+  }
+  .post-wrapper{
+    @extend %padding-post-teaser;
+    border-bottom: 1px solid $border-color;
   }
   .excerpt {
     margin: 0.5em 0;

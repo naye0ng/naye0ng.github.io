@@ -30,7 +30,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-headings;
   line-height: 1.3;
-  margin: 0.67em 0;
+  //margin: 0.67em 0;
   a {
     color: $text-color;
   }
@@ -137,7 +137,7 @@ img[align=right] {
   display: none;
 }
 .post-link:hover {
-  color: $link-color;
+  color: $thema-color;
 }
 
 footer {
@@ -146,32 +146,6 @@ footer {
 
 thead{
   background-color: $gray-color;
-}
-
-// post.html
-.highlight pre {
-  padding: $padding-2per;
-  border-radius: 0.5%;
-}
-
-// image shadow effect
-img {
-  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
-}
-
-// tag_label
-.tag_box {
-  padding : 1px 6px;
-  border-radius: 3px;
-  background-color: #83aad7;//$link-color;
-  color : #ffffff !important;
-  font-size: 11px;
-  font-weight: 500;
-}
-
-// ul Style override
-.task-list {
-  list-style-type: none;
 }
 
 // code : text decorator
@@ -190,4 +164,96 @@ blockquote {
   color: rgba(0,0,0,0.5);
   padding: 15px 20px;
   font-size: 0.9em;
+}
+
+
+// image shadow effect
+img {
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+// tag_label
+// .tag_box {
+//   padding : 1px 6px;
+//   border-radius: 3px;
+//   background-color: #83aad7;//$link-color;
+//   color : #ffffff !important;
+//   font-size: 11px;
+//   font-weight: 500;
+// }
+
+// https://cssglobe.com/pure-css3-post-tags/ 참고, Tag Style 
+.tags{
+  display:inline;
+	margin:0;
+	padding:0;
+	right:24px;
+	bottom:-12px;
+  list-style:none;
+
+}
+.tags li, .tags a{
+  display: inline-block;
+	height:20px;
+	line-height:20px;
+	position:relative;
+	font-size:0.5rem;
+}
+.tags a{
+	margin-left:20px;
+	padding:0 10px 0 12px;
+	background: #eee;
+	color: #999;
+	text-decoration:none;
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius:4px;	
+	border-bottom-right-radius:4px;
+	-moz-border-radius-topright:4px;
+	-webkit-border-top-right-radius:4px;	
+	border-top-right-radius:4px;	
+} 
+.tags a:before{
+	content:"";
+	float:left;
+	position:absolute;
+	top:0;
+	left:-12px;
+	width:0;
+	height:0;
+	border-color:transparent #eee transparent transparent;
+	border-style:solid;
+	border-width:10px 12px 10px 0;	
+} 
+.tags a:after{
+	content:"";
+	position:absolute;
+	top:8px;
+	left:0;
+	float:left;
+	width:4px;
+	height:4px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	background:#fff;
+	-moz-box-shadow:-1px -1px 2px #eee;
+	-webkit-box-shadow:-1px -1px 2px #eee;
+	box-shadow:-1px -1px 2px #999;
+}
+.tags a:hover{
+  background:$thema-color ;
+  color:#fff;
+}	
+
+.tags a:hover:before{border-color:transparent $thema-color transparent transparent;}
+
+// ul Style override
+.task-list {
+  list-style-type: none;
+}
+
+// post.html
+.highlight pre {
+  padding: $padding-2per;
+  border-radius: 0.5%;
 }
