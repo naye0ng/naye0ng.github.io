@@ -46,3 +46,17 @@ a.button {
 .disabled {
   opacity: 0.7;
 }
+
+// Custom Button
+.round-btn {
+  border-radius: 50px;
+  border: 1px solid;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 5px 12px 5px;
+  color : $text-color;
+  font-size: 0.7em;
+}
+.round-btn:hover{
+  color : $thema-color;
+}

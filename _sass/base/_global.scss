@@ -257,3 +257,20 @@ img {
   padding: $padding-2per;
   border-radius: 0.5%;
 }
+
+// tag list paging
+a.link-page{
+  text-align: center;
+  font-size: 0.8rem;
+  color: $text-color;
+  padding: 6px 12px 6px;
+}
+a.link-page:hover{
+  color: $thema-color;
+  font-weight: bold;
+}
+a.link-page.selected{
+  border-radius: 3px;
+  color: $thema-color;
+  font-weight: bold;
+}
