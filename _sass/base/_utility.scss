@@ -17,6 +17,12 @@
     padding: $padding-small;
   }
 }
+%padding-footer {
+  padding: $padding-small $padding-large;
+  @media (max-width: 1000px) {
+    padding: $padding-small;
+  }
+}
 // Buttons
 .button {
   border-radius: 0.3em;
