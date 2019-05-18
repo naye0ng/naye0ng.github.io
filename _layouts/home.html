@@ -55,7 +55,7 @@ layout: default
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | relative_url | replace: '//', '/' }}"  class="round-btn">
       <i class="fa fa-chevron-left"></i>
-      {{ site.theme_settings.str_previous_page }}
+      <!-- {{ site.theme_settings.str_previous_page }} -->
     </a>
     {% endif %}
     <!-- page list 출력 -->
@@ -67,7 +67,7 @@ layout: default
 
     {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | relative_url | replace: '//', '/' }}" class="round-btn">
-      {{ site.theme_settings.str_next_page }}
+      <!-- {{ site.theme_settings.str_next_page }} -->
       <i class="fa fa-chevron-right"></i>
     </a>
     {% endif %}
