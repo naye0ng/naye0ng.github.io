@@ -16,8 +16,8 @@ theme_settings:
   header_text_feature_image:
   footer_text: 
    © 2019 Nayeong 
-   <br>
-   Powered by Jekyll with Type Theme
+   <br/>
+   <span class="footer-font-s">Powered by Jekyll with Type Theme</span>
 
   # Icons
   rss: false
