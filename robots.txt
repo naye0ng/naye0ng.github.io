@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://naye0ng.github.io/sitemap.xml
