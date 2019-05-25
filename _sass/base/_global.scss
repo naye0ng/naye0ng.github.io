@@ -137,16 +137,14 @@ img[align=right] {
   display: none;
 }
 .post-link:hover {
-  color: $thema-color;
+  color: $theme-color;
 }
-
-footer {
-  margin-top: 5rem;
-}
-
 thead{
   background-color: $gray-color;
 }
+// .wrap-content{
+//   @extend %padding-small;
+// }
 
 // code : text decorator
 .highlighter-rouge{
@@ -230,11 +228,11 @@ img {
 	box-shadow:-1px -1px 2px #999;
 }
 .tags a:hover{
-  background:$thema-color ;
+  background:$theme-color ;
   color:#fff;
 }	
 
-.tags a:hover:before{border-color:transparent $thema-color transparent transparent;}
+.tags a:hover:before{border-color:transparent $theme-color transparent transparent;}
 
 // ul Style override
 .task-list {
@@ -255,12 +253,12 @@ a.link-page{
   padding: 6px 12px 6px;
 }
 a.link-page:hover{
-  color: $thema-color;
+  color: $theme-color;
   font-weight: bold;
 }
 a.link-page.selected{
   border-radius: 3px;
-  color: $thema-color;
+  color: $theme-color;
   font-weight: bold;
 }
 

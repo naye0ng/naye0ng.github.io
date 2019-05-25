@@ -1,9 +1,9 @@
 {% if include.tag_count > 0 %}
-<footer>
+<div class="wrap-tag">
   <div class="tags">
     {% for tag in include.tags %}
     <a class="tag tag_box" href="{{site.baseurl}}/tags#{{ tag | cgi_escape }}">{{tag}}</a>
     {% endfor %}
   </div>
-</footer>
+</div>
 {% endif %}

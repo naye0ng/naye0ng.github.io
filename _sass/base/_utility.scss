@@ -14,6 +14,12 @@
     padding: 0px;
   }
 }
+%padding-post {
+  padding: 0px $padding-large;
+  @media (max-width: 1000px) {
+    padding: 0px $padding-middle;
+  }
+}
 %padding-post-teaser {
   padding: $padding-small * 0.8 $padding-2per;
   @media (max-width: 576px) {
@@ -21,9 +27,9 @@
   }
 }
 %padding-footer {
-  padding: $padding-small $padding-large;
+  padding: $padding-2per $padding-large;
   @media (max-width: 1000px) {
-    padding: $padding-small;
+    padding: $padding-2per $padding-small;
   }
 }
 
@@ -69,5 +75,5 @@ a.button {
 }
 .round-btn:hover{
   color : #ffffff;
-  background-color: $thema-color;
+  background-color: $theme-color;
 }
