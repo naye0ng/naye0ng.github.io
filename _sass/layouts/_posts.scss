@@ -10,13 +10,14 @@ article,
 }
 article {
   .subtitle {
-    font-size: 1.45em;
+    font-size:1.2rem;
     font-weight: normal;
     margin: 0;
   }
   header {
     margin-bottom: 6%;
-    text-align: center;
+    padding: 10% 0 6%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
   }
   a {
     @extend .body-link;
@@ -31,10 +32,10 @@ header {
   }
 }
 .meta {
-  color: rgba($text-color, .5);
+  color: rgba($text-color, .4);
   font-size: 0.8em;
-  // letter-spacing: 0.1em;
-  margin: 0;
+   letter-spacing: 0.03em;
+  margin-top: 3%;
   text-transform: uppercase;
 }
 .feature-image {
