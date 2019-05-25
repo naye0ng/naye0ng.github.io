@@ -10,6 +10,9 @@
   @media (max-width: 1000px) {
     padding: 0px $padding-middle;
   }
+  @media (max-width: 576px) {
+    padding: 0px;
+  }
 }
 %padding-post-teaser {
   padding: $padding-small * 0.8 $padding-2per;
@@ -23,6 +26,7 @@
     padding: $padding-small;
   }
 }
+
 // Buttons
 .button {
   border-radius: 0.3em;

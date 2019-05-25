@@ -25,8 +25,10 @@
     font-size: 1em;
     line-height: 1.5;
   }
-
   .site-nav {
+    // 상단바 두줄 방지
+    display: inline-block;
+    float: right;
     ul {
       margin: 0;
       padding: 0;
@@ -87,3 +89,5 @@
         }
     }
 }
+
+/* custom style navbar */
