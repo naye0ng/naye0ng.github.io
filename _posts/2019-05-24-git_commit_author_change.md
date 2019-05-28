@@ -34,7 +34,7 @@ author(작성자)가 달라서 생기는 문제였음을 확인할 수 있다.
 `git config --list`명령을 통해 설정값을 확인할 수 있다.
 
 <br/>
- 
+
 ### 1. git config
 사용자 정보가 잘못 저장되어 있다면 이를 변경 혹은 생성하자.
 {% highlight shell %}
@@ -47,7 +47,7 @@ $ git config --global user.email "{사용자 이메일}"
 위 과정은 commit을 수정하는 과정과는 무관하지만, 이후의 commit을 작성할때 같은 실수가 반복되지 않기 위해 해주는 과정이다.
 
 <br/>
- 
+
 ### 2. git rebase 란?
 말 그대로 re-base 한다고 생각하면 된다. 즉, branch의 base를 다시 설정한다는 의미이다.
 <br/>
