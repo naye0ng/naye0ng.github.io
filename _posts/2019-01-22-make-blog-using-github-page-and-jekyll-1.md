@@ -3,6 +3,7 @@ layout: post
 title: "Jekyll과 Github Page로 블로그 만들기(1)"
 subtitle: "rbenv환경에서 Jekyll 블로그 설치"
 author: Nayeong Kim
+categories : Jekyll
 tags: [GitHub, Jekyll]
 comments : True
 ---

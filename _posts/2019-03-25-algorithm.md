@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "[알고리즘] Python으로 부분집합, 순열, 조합, 중복순열, 중복조합 구하기"
+title: "Python으로 부분집합, 순열, 조합, 중복순열, 중복조합 구하기"
 subtitle: "재귀 및 반복을 사용하여 부분집합, 순열, 조합, 중복순열, 중복조합 구현"
 author: Nayeong Kim
+categories : Algorithm
 tags: [Algorithm, Python]
 comments : True
 ---

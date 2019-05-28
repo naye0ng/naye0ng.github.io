@@ -2,6 +2,7 @@
 layout: post
 title: "Jekyll 블로그의 코드블록에서 liquid 코드 출력하기"
 subtitle: "highlight 메서드 내부에서 liquid 코드 실행 정지하기"
+categories : Jekyll
 tags: Jekyll
 author: Nayeong Kim
 comments : True

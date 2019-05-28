@@ -3,6 +3,7 @@ layout: post
 title: "모던 자바스크립트 1 - 블록 바인딩"
 subtitle: "var, let, const의 차이 및 호이스팅"
 author: Nayeong Kim
+categories : Javascript
 tags: Javascript
 comments : True
 ---

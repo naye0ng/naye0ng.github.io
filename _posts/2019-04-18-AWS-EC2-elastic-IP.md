@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "[AWS] EC2 인스턴스 고정IP 할당"
+title: "AWS EC2 인스턴스 고정IP 할당"
 subtitle: "EC2 인스턴스 IP 고정하기"
+categories : AWS
 tags: AWS
 author: Nayeong Kim
 comments : True

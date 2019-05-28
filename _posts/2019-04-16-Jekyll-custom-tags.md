@@ -2,6 +2,7 @@
 layout: post
 title: "Jekyll 블로그 커스터마이징 1 - 태그(Tag)"
 subtitle: "Jekyll 블로그 목록에 태그 추가하기"
+categories : Jekyll
 tags: Jekyll
 author: Nayeong Kim
 comments : True

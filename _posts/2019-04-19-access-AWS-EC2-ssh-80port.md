@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "[AWS] EC2 SSH 22번 포트 대신 80포트 사용하기"
+title: "AWS EC2 SSH 22번 포트 대신 80포트 사용하기"
 subtitle: "방화벽, 포트차단 우회하기"
+categories : AWS
 tags: AWS
 author: Nayeong Kim
 comments : True

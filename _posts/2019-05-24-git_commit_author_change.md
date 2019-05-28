@@ -2,7 +2,8 @@
 layout: post
 title: "Git commit author(작성자) 변경하기"
 subtitle: "git rebase 명령을 이용한 커밋 수정하기"
-tags: Bixbys
+categories : Git
+tags: Git
 author: Nayeong Kim
 comments : True
 ---

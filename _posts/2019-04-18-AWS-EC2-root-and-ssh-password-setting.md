@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "[AWS] EC2 인스턴스 비밀번호 활성화"
+title: "AWS EC2 인스턴스 비밀번호 활성화"
 subtitle: "EC2 인스턴스 공개키(.pem)없이 간편하게 접속하기"
+categories : AWS
 tags: AWS
 author: Nayeong Kim
 comments : True

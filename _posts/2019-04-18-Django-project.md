@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "[Django] 메모 앱 만들기 1 - 프로젝트 및 앱 생성"
+title: "[Django 프로젝트] 메모 앱 만들기 1 - 프로젝트 및 앱 생성"
 subtitle: "Django 프로젝트 및 앱 생성"
+categories : Django
 tags: [Django, Project]
 author: Nayeong Kim
 comments: True
