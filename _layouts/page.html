@@ -5,6 +5,23 @@ layout: default
   <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
     <h1 class="title">{{ page.title }}</h1>
     {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
+    {% if page.title == "CATEGORYS"%}
+    <ul class="category-box">
+      {% for category in site.categories %}
+      <li>
+        <a href="#{{ category | first }}">
+          <span class="category">
+            {{ category | first }}
+            <span class="category-num">
+            {% assign category_num= category | first %}
+            {{ site.categories[category_num].size }}
+            </span>
+        </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
   </header>
   <section class="post-content">{{ content }}</section>
 </article>
