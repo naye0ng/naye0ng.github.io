@@ -5,6 +5,25 @@ layout: default
   <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
     <h1 class="title">{{ page.title }}</h1>
     {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
+    <!-- tag -->
+    {% if page.title == "TAGS"%}
+    <ul class="category-box">
+      {% for tag in site.tags %}
+      <li>
+        <a href="#{{ tag | first }}">
+          <span class="category">
+            {{ tag | first }}
+            <span class="category-num">
+            {% assign tag_num= tag | first %}
+            {{ site.tags[tag_num].size }}
+            </span>
+        </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <!-- category -->
     {% if page.title == "CATEGORYS"%}
     <ul class="category-box">
       {% for category in site.categories %}

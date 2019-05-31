@@ -9,23 +9,25 @@ layout: page
 {% for item in (0..site.tags.size) %}
   {% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-    <h2 id="{{ this_word | cgi_escape }}" class="tag-title">
-      #{{ this_word }}
-    </h2>
-    <!-- lists all posts corresponding to specific tag -->
-    {% for post in site.tags[this_word] %}
-      {% if post.title != null %}
-        <div class="tagged-post">
-          <h3 class="title">
-            <a href="{{ post.url | relative_url }}">
-              {{ post.title }}
-            </a>
-          </h3>
-          <div class="meta">
-            {{ post.date | date: "%B %-d, %Y" }}
+    <div class="category-list">
+      <h2 id="{{ this_word | cgi_escape }}" class="category-list-title">
+        #{{ this_word }}
+      </h2>
+      <!-- lists all posts corresponding to specific tag -->
+      {% for post in site.tags[this_word] %}
+        {% if post.title != null %}
+          <div class="category-post">
+            <div class="post-list-meta">
+              {{ post.date | date: "%B %-d, %Y" }}
+            </div>
+            <h3 class="post-list-title">
+              <a href="{{ post.url | relative_url }}">
+                {{ post.title }}
+              </a>
+            </h3>
           </div>
-        </div>
-      {% endif %}
-    {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
   {% endunless %}
 {% endfor %}
