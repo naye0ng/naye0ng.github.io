@@ -12,26 +12,6 @@ comments: True
 
 <br>
 
-### 메모 앱 기능 정리
-
-[ Django ]
-- [ ]  &nbsp;&nbsp;개인 메모
-- [ ]  &nbsp;&nbsp;단체 메모
-- [ ]  &nbsp;&nbsp;좋아요 기능
-- [ ]  &nbsp;&nbsp;태그 기능
-- [ ]  &nbsp;&nbsp;색상 및 테두리 변경 기능
-- [ ]  &nbsp;&nbsp;강조 기능
-- [ ]  &nbsp;&nbsp;조회(생성일자, 작성자) 기능
-- [ ]  &nbsp;&nbsp;소셜 로그인(Google, GitHub)
-
-[ Javascript ]
-
-- [ ]  &nbsp;&nbsp;사용자 UI 개선
-- [ ]  &nbsp;&nbsp;좋아요, 색상 등을 비동기적으로 처리
-- [ ]  &nbsp;&nbsp;마우스 이벤트로 메모 위치 이동 및 고정
-
-<br>
-
 ## Django 프로젝트 및 앱 생성
 
 AWS Ubuntu 환경에서 작업할 예정이며, 이와 관련된 내용은 [[aws]Django 서버 세팅1]({{ site.baseurl}}/2019/04/15/AWS-EC2-Ubuntu-인스터스-생성-및-Django-서버-세팅.html),  [[aws]Django 서버 세팅2]({{ site.baseurl}}/2019/04/15/AWS-EC2-Ubuntu-인스터스-생성-및-Django-서버-세팅-2.html) 에서 확인할 수 있다.
