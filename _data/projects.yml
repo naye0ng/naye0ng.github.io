@@ -1,19 +1,19 @@
 - project :
-  - print : False # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
-    url : https://github.com/naye0ng/Grape-Theme # Full URL
-    date : 2019.06.09
-    image : "portfolio.png" # path: assets/project/
+  - print : True  
+    url : https://github.com/naye0ng/Grape-Theme 
+    date : 2019.06.09 - 개발중
+    image : "portfolio.png" 
     title : Grape-Theme
-    subtitle : A awesome jekyll theme
+    subtitle : 포도를 연상케 하는 반응형 지킬 블로그 테마
     skills : [HTML, CSS, JAVASCRIPT, ]
-    description : this project is my first jekyll theme. and everyone can customize this easily.  
+    description : Grape-Theme 프로젝트를 진행하기 전, 다른 사람이 만든 테마를 적용하여 Github와 Jekyll로 블로그를 만들었었다.
+        <br/>해당 테마에서는 '포트폴리오 페이지'와 '태그 페이지'를 제공하지 않았기 때문에 직접 필요한 페이지들을 추가해야만 했는데,
+        <br/>그렇게 블로그를 커스터마이징하는 과정에서 Liquid Language와 SCSS의 사용법을 자연스럽게 익힐수 있었다.
+        <br/>이후 나만의 지킬 테마를 만들고 싶다는 욕심이 생겼고, Grape-Theme를 만들게 되었다.
+        <hr>
+        개발 계획
+        <br/>- project 부분 디자인 변경
+        <br/>- favicon.ico, search 기능
+        <br/>- OG Tag 추가
+        <br/>- gem 배포
 
-- project :
-  - print : True 
-    url : https://github.com/naye0ng/Grape-Theme # Full URL
-    date : 2019.06.09
-    image : 
-    title : Grape-Theme2
-    subtitle : A awesome jekyll theme2
-    skills : [HTML, CSS, JAVASCRIPT, ]
-    description : this project is my first jekyll theme. and everyone can customize this easily.  
