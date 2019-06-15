@@ -1,0 +1,16 @@
+{% if site.theme_settings.katex and page.id %}
+<script src="{{ '/assets/js/katex_init.js' | relative_url }}"></script>
+{% endif %}
+
+<!-- {% if site.theme_settings.footer_text %}
+<footer class="site-footer">
+	<div class="f-l">
+		<p class="text">{{ site.theme_settings.footer_text }}</p>
+	</div>	
+	<div class="f-r">
+		<a onclick="window.scrollTo(0,0)" id="top-button">
+			<i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+</footer>
+{% endif %} -->

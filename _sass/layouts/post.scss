@@ -1,0 +1,27 @@
+#post{
+    @extend %page-padding;
+    .post-header{
+        padding-bottom : 60px;
+        text-align: center;
+        .title{
+            margin-bottom: 0px;
+        }
+        .subtitle{
+            font-size : 1.2rem;
+        }
+        .meta{
+            color : $text-gray;
+            font-size: 0.85rem;
+            margin-top : 15px;
+        }
+    }
+    .post-content{
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+}
+#comments{
+    @extend %page-padding;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}

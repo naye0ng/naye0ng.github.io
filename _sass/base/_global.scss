@@ -1,269 +1,115 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-figure {
-  margin: 0;
-}
-// For correct line number width in Github Gists
-.gist table tbody tr td {
-  box-sizing: content-box;
-}
-html {
-  background: $background-color;
+*{
+	-webkit-text-size-adjust:none;
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+	box-sizing: border-box;
 }
 
-// Typography
-::selection {
-  background: $selection-color;
+body{-webkit-user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	word-break: keep-all;
+	font-size: 1.05rem;
+    line-height: 1.5em;
 }
-::-moz-selection {
-  background: $selection-color;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
 }
-body {
-  color: $text-color;
-  font-family: $font-family-main;
-  font-size: $font-size;
-  word-wrap: break-word;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family-headings;
-  line-height: 1.3;
-  //margin: 0.67em 0;
-  a {
-    color: $text-color;
-  }
+html, body {
+	color: $text;
+    height: 100%;}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 600;
 }
 h1 {
-  font-size: 1.8em;
+	font-size : 1.8rem;
 }
 h2 {
-  font-size: 1.6em;
+	font-size : 1.6rem;
 }
 h3 {
-  font-size: 1.4em;
+	font-size : 1.4rem;
 }
 h4 {
-  font-size: 1.25em;
+	font-size : 1.3rem;
 }
-blockquote {
-    border-left: 2px solid;
-    padding: 1em 1em;
+h5 {
+	font-size : 1.2rem;
 }
-blockquote p:last-child,
-footer p:last-child {
-  margin-bottom: 0;
+h6 {
+	font-size : 1.05rem;
 }
-table {
-  table-layout:fixed;
-  width:100%;
-  word-wrap:break-word;
-  @media (max-width: 1100px) {
-    overflow-x: scroll;
-    display: inline-block;
-  }
-}
-td,
-th {
-  padding: 0.5em 1em;
-  border: 1px solid $border-color;
-  text-align: left;
-}
-table,
-dl,
-blockquote,
-code,
-kbd,
-pre,
-samp {
-  margin: 1em 0;
-}
-dt {
-  font-weight: bold;
-}
-dd {
-    margin-left: 2em;
-}
-p, ol, ul, dl, .math-display {
-  line-height: 1.5;
-  margin-bottom: 1em;
-}
-// KaTeX math display
-.math-display {
-  display: inline-block;
-  width: 100%;
-}
-// Lists within lists
-li > ul, li > ol {
-    margin-bottom: 0;
-    margin-left: 1em;
-}
+
 ol, ul {
-  list-style-position: inside;
+	list-style: none;
 }
-hr {
-  border: 0;
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid #fff;
-  margin: 1em 0;
+a:link, a:visited, a:active, a:hover {
+	text-decoration: none; 
+	color: $text;
 }
-a {
-  color: $link-color;
-  text-decoration: none;
+.container{
+	padding-top : 30px;
+	padding-bottom: 30px;
 }
-.nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.highlighter-rouge {
+    font-size: 0.9rem;
+    color: $theme-color;
+    background-color: $theme-bright;
+    padding: .1em .5em;
+    border-radius: 3px;
 }
-// Responsive media
-iframe, img, embed, object, video {
-  max-width: 100%;
+.tag {
+	background-color: $theme-dark;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-right : 3px;
+	padding: 1px 15px 0px;
+    border-radius: 20px;
+    color: #fff;
+	font-weight: 600;
+	font-size: 0.85rem;
+	line-height: 35px;
+	letter-spacing: -0.03rem;
 }
-
-img[align=left] {
-  margin-right: 3%;
+.tag:hover {
+	background-color: $theme-dark2;
 }
-img[align=right] {
-  margin-left: 3%;
-}
-
-/***** NAYEONG CUSTOM STYLE *****/
-.mb-0 {
-  margin-bottom:0px;
-}
-.display-none{
-  display: none;
-}
-.post-link:hover {
-  color: $theme-color;
-}
-thead{
-  background-color: $gray-color;
-}
-// .wrap-content{
-//   @extend %padding-small;
-// }
-
-// code : text decorator
-.highlighter-rouge{
-  font-size: 90%;
-  color: #364fc7;
-  background-color: #f1f3f5;
-  padding: .1em .3em;
-  border-radius: 3px;
-}
-
-blockquote {
-  background: $gray-color;
-  border-left: 0em solid #33a9dc;
-  color: rgba(0,0,0,0.5);
-  padding: 15px 20px;
-  font-size: 0.9em;
-}
-
-// image shadow effect
-img {
-  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.5);
-}
-
-// https://cssglobe.com/pure-css3-post-tags/ 참고, Tag Style 
-.tags{
-  display:inline;
-	margin:0;
-	padding:0;
-	right:24px;
-	bottom:-12px;
-  list-style:none;
-
-}
-.tags li, .tags a{
-  display: inline-block;
-	height:20px;
-	line-height:20px;
-	position:relative;
-	font-size:0.5rem;
-}
-.tags a{
-	margin-left:20px;
-	padding:0 10px 0 12px;
-	background: #eee;
-	color: #999;
-	text-decoration:none;
-	-moz-border-radius-bottomright:4px;
-	-webkit-border-bottom-right-radius:4px;	
-	border-bottom-right-radius:4px;
-	-moz-border-radius-topright:4px;
-	-webkit-border-top-right-radius:4px;	
-	border-top-right-radius:4px;	
-} 
-.tags a:before{
-	content:"";
-	float:left;
-	position:absolute;
-	top:0;
-	left:-12px;
-	width:0;
-	height:0;
-	border-color:transparent #eee transparent transparent;
-	border-style:solid;
-	border-width:10px 12px 10px 0;	
-} 
-.tags a:after{
-	content:"";
-	position:absolute;
-	top:8px;
-	left:0;
-	float:left;
-	width:4px;
-	height:4px;
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
-	border-radius:2px;
-	background:#fff;
-	-moz-box-shadow:-1px -1px 2px #eee;
-	-webkit-box-shadow:-1px -1px 2px #eee;
-	box-shadow:-1px -1px 2px #999;
-}
-.tags a:hover{
-  background:$theme-color ;
-  color:#fff;
-}	
-
-.tags a:hover:before{border-color:transparent $theme-color transparent transparent;}
-
-// ul Style override
-.task-list {
-  list-style-type: none;
-}
-
-// post.html
-.highlight pre {
-  padding: $padding-2per;
-  border-radius: 0.5%;
-}
-
-// tag list paging
-a.link-page{
-  text-align: center;
-  font-size: 0.8rem;
-  color: $text-color;
-  padding: 6px 12px 6px;
-}
-a.link-page:hover{
-  color: $theme-color;
-  font-weight: bold;
-}
-a.link-page.selected{
-  border-radius: 3px;
-  color: $theme-color;
-  font-weight: bold;
-}
-
-.f-l {
-  float:left;
-}
-.f-r {
-  float:right
+#icons{
+	margin-top: 25px;
+	li { 
+		display: inline-block; 
+	}
+	i{
+		width: 40px;
+		height: 40px;
+		background-color: rgba(0,0,0,0.07);
+		color : rgba(0,0,0,0.7);
+		border-radius: 50%;
+		font-size : 1.3rem;
+		line-height: 42px;
+		margin-right : 10px;
+		text-align: center;
+	}
+	i:hover {
+		background-color: $theme-dark;
+		color : #fff;
+	}
 }

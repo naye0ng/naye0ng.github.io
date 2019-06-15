@@ -1,43 +1,39 @@
-<header class="site-header">
-	<div class="branding">
-		{% if site.theme_settings.gravatar %}
-		<a href="{{ site.baseurl }}/">
-			<img class="avatar" src="https://secure.gravatar.com/avatar/{{ site.theme_settings.gravatar }}?s=100" alt=""/>
-		</a>
-		{% elsif site.theme_settings.avatar %}
-		<a href="{{ site.baseurl }}/">
-			<img class="avatar" src="{{ site.baseurl }}/{{ site.theme_settings.avatar }}" alt=""/>
-		</a>
-		{% endif %}
-		<h1 class="site-title">
-			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
-		</h1>
-	</div>
-	<nav class="site-nav">
-		<ul>
-			{% for page in site.pages %}
-			{% if page.title and page.hide != true %}
-			<li>
-				<a class="page-link" href="{{ page.url | relative_url }}">
-					{{ page.title }}
-				</a>
-			</li>
-			{% endif %}
-			{% endfor %}
-			<!-- Social icons from Font Awesome, if enabled  -->
-			{% include icons.html %}
-            
-            <!-- Search bar -->
-            {% if site.theme_settings.search %}
-            <li>
-            <form action="{{ site.baseurl }}/search.html" method="get">
-                <input type="text" id="search-box" name="query" placeholder="Search" class="">
-                <button type="submit" class="">
-                    <i class="fa fa-fw fa-search"></i>
-                </button>
-            </form>
-            </li>
-            {% endif %}
-		</ul>
-	</nav>  
+{% assign _url = page.url | split: "/" %}
+{% assign current = _url[-1] | split: "." %}
+<header>
+    <nav>
+        <ul>
+        {% case current[0] %}
+            {% when 'tags'%}
+            <!-- tags -->
+            <a href="{{ site.url }}">
+                <li class="btn-nav">Blog</li>
+            </a>
+            <li class="current">Tags</li>
+            <a href="{{ site.url }}/portfolio">
+                <li class="btn-nav">Portfolio</li>
+            </a>
+            <!-- portfolio -->
+            {% when 'portfolio'%}
+            <a href="{{ site.url }}">
+                <li class="btn-nav">Blog</li>
+            </a>
+            <a href="{{ site.url }}/tags">
+                <li class="btn-nav">Tags</li>
+            </a>
+            <li class="current">Portfolio</li>
+            {% else %}
+            <!-- others -->
+            <a href="{{ site.url }}">
+                <li class="current btn-nav">Blog</li>
+            </a>
+            <a href="{{ site.url }}/tags">
+                <li class="btn-nav">Tags</li>
+            </a>
+            <a href="{{ site.url }}/portfolio">
+                <li class="btn-nav">Portfolio</li>
+            </a>
+        {% endcase %}
+        </ul>
+    </nav>
 </header>

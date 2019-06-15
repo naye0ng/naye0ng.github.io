@@ -1,0 +1,19 @@
+- project :
+  - print : False # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    url : https://github.com/naye0ng/Grape-Theme # Full URL
+    date : 2019.06.09
+    image : "portfolio.png" # path: assets/project/
+    title : Grape-Theme
+    subtitle : A awesome jekyll theme
+    skills : [HTML, CSS, JAVASCRIPT, ]
+    description : this project is my first jekyll theme. and everyone can customize this easily.  
+
+- project :
+  - print : True 
+    url : https://github.com/naye0ng/Grape-Theme # Full URL
+    date : 2019.06.09
+    image : 
+    title : Grape-Theme2
+    subtitle : A awesome jekyll theme2
+    skills : [HTML, CSS, JAVASCRIPT, ]
+    description : this project is my first jekyll theme. and everyone can customize this easily.  

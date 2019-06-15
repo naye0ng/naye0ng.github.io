@@ -1,27 +1,25 @@
 ---
-layout: default
+layout: page
 ---
-<article {% if page.feature-img %}class="feature-image"{% endif %}>
-  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
-    <h2 class="title">{{ page.title }}</h2>
-    {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
-    <p class="meta">
-      {% if page.author %}{{ page.author }} &nbsp;&nbsp;|&nbsp;&nbsp; {% endif %}
-      {{ page.date | date: "%B %-d, %Y" }}
-    </p>
-  </header>
-  <section class="post-content">{{ content }}</section>
-  {% include tags_list.html tags=page.tags tag_count=page.tags.size %}
-</article>
+<div id="post">
+    <section class="post-header">
+        <h1 class="title">{{ page.title }}</h1>
+        <p class="subtitle">{{ page.subtitle }}</p>
+        <p class="meta">
+        {{ page.date | date: "%B %-d, %Y" }}
+        </p>
+    </section>
+    <section class="post-content">
+        {{ content }}
+    </section>
+</div>
 
 <!-- Disqus -->
 {% if site.theme_settings.disqus_shortname %}
-<div class="comments">
+<div id="comments">
   {% include disqus.html %}
 </div>
 {% endif %}
 
-<!-- Post navigation -->
-{% if site.theme_settings.post_navigation %}
-  {% include post_nav.html %}
-{% endif %}
+<!-- Footer -->
+{% include footer.html %}

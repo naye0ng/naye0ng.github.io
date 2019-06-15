@@ -1,0 +1,79 @@
+// Mix-ins
+%padding-small {
+  padding: $padding-2per $padding-x-small * 2;
+  @media (max-width: 1000px) {
+    padding: $padding-2per $padding-x-small;
+  }
+}
+%padding-regular {
+  padding: 0px $padding-large;
+  @media (max-width: 1000px) {
+    padding: 0px $padding-middle;
+  }
+  @media (max-width: 576px) {
+    padding: 0px;
+  }
+}
+%padding-post {
+  padding: 0px $padding-large;
+  @media (max-width: 1000px) {
+    padding: 0px $padding-middle;
+  }
+}
+%padding-post-teaser {
+  padding: $padding-small * 0.8 $padding-2per;
+  @media (max-width: 576px) {
+    padding: $padding-small;
+  }
+}
+%padding-footer {
+  padding: $padding-2per $padding-large;
+  @media (max-width: 1000px) {
+    padding: $padding-2per $padding-small;
+  }
+}
+
+// Buttons
+.button {
+  border-radius: 0.3em;
+  border: 1px solid;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 0.5em 0.75em;
+}
+a.button {
+  @extend .button-link;
+}
+.button-link {
+  &:hover {
+    background: $link-color;
+    border: 1px solid $link-color;
+    color: $background-color;
+    text-decoration: none;
+  }
+}
+.body-link {
+  &:hover {
+    text-decoration: none;
+    color: $theme-color;//darken($link-color, 15%);
+  }
+}
+// States
+.disabled {
+  opacity: 0.7;
+}
+
+// Custom Button
+.round-btn {
+  border-radius: 50px;
+  border: 1px solid;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 5px 12px 5px;
+  color : #7f888c;
+  font-size: 0.7em;
+}
+.round-btn:hover{
+  color : #ffffff;
+  background-color: $theme-color;
+}
