@@ -5,6 +5,7 @@ url : "https://naye0ng.github.io"
 # Theme Settings
 theme_settings :
   title : Nayeong's Devlog
+  favicon : assets/favicon.ico
 
   # Profile Settings
   profile :
