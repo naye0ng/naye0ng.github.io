@@ -57,7 +57,32 @@ h5 {
 h6 {
 	font-size : 1.05rem;
 }
-
+p{
+	margin: 5px 0;
+}
+@media (max-width: 576px){
+	h1 {
+		font-size : 1.6rem;
+	}
+	h2 {
+		font-size : 1.4rem;
+	}
+	h3 {
+		font-size : 1.3rem;
+	}
+	h4 {
+		font-size : 1.2rem;
+	}
+	h5 {
+		font-size : 1.05rem;
+	}
+	h6 {
+		font-size : 1rem;
+	}
+	p{
+		font-size : 0.9rem;
+	}
+}
 ol, ul {
 	list-style: none;
 }
@@ -71,6 +96,9 @@ a:link, a:visited, a:active, a:hover {
 	@media (min-width: 576px){
 		min-width: 600px;
 	}
+}
+.display-none{
+	display: none;
 }
 .highlighter-rouge {
     font-size: 0.9rem;

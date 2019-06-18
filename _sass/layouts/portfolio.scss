@@ -36,6 +36,8 @@
             }
         }
         .text-wrap{
+            min-width:180px;
+            min-height:180px;
             padding-bottom: 25px;
             .description{
                 margin: 10px 0;
@@ -47,9 +49,9 @@
         content: "";
         position: absolute;
         z-index: -1;
-        width: 140%;
+        width: 200%;
         top: -25px;
-        left:-20%;
+        left:-50%;
         height: 100%;
         background-color: $theme-dark;
     }
