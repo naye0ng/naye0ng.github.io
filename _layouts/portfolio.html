@@ -4,6 +4,8 @@ layout: page
 {% assign profile = site.theme_settings.profile %}
 
 <div id="portfolio">
+    <section class="bg"></section>
+    <h1 class="title">{{ page.title }}</h1>
     <div class="profile row">
         <div class="img-wrap col-md-4">
             <div class="img">
@@ -19,7 +21,17 @@ layout: page
             </ul>
         </div>
     </div>
-    <section class="bg"></section>
 </div>
-
+<div id="skills">
+    <h1 class="title">🚀 Skills</h1>
+    {% for skill in profile.skills %}
+    <div class="skill">
+        <div class="skill-name">{{ skill[0] }}</div>
+        <div class="skill-per">
+            <div class="skill-f" style="width:{{ skill[1] }}%"> </div>
+            <div class="skill-b" style="width:{{ 100 | minus: skill[1] }}%"> </div>
+        </div>
+    </div>
+    {% endfor%}
+</div>
 {% include projects.html %}

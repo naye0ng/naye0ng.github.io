@@ -1,14 +1,25 @@
 #portfolio{
-    position:relative;
     height: 100%;
     @extend %page-padding;
+    .bg{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 105px;
+        left:0%;
+        height: 95px;
+        background-color: $theme-dark;
+    }
+    h1.title{
+        color:#fff;
+    }
     .profile{
+        margin-top:90px;
         margin-bottom: 30px;
         text-align: left;
-        color:#fff;
         @media (max-width:767px) {
             text-align: center;
-            padding: 0 15%;
         }
         .img-wrap{
             margin-bottom: 15px;
@@ -25,19 +36,8 @@
                     width:100%;
                 }
             }
-            .img::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0,0,0,0.03);
-            }
         }
         .text-wrap{
-            min-width:180px;
-            min-height:180px;
             padding-bottom: 25px;
             .description{
                 margin: 10px 0;
@@ -45,26 +45,42 @@
             }
         }
     }
-    .bg{
-        content: "";
-        position: absolute;
-        z-index: -1;
-        width: 200%;
-        top: -25px;
-        left:-50%;
-        height: 100%;
-        background-color: $theme-dark;
-    }
     #icons i{
         width: 35px;
         height: 35px;
         font-size: 1.2rem;
         line-height: 35px;
-        color:$theme-dark;
-        background-color: #fff;
     }
-    #icons i:hover{
-        background-color: $theme-dark2;
-        color:#fff;
+}
+
+#skills{
+    @extend %page-padding;
+    margin-bottom: 90px;
+    .title{
+        margin-bottom: 30px;
     }
+    .skill{
+        margin-bottom:35px;
+        .skill-name{
+            margin-bottom: 5px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: -0.03rem;
+        }
+        .skill-per{
+            display: block;
+        }
+        .skill-per div{
+            display:inline-block;
+            float: left;
+            height: 15px;
+        }
+        .skill-f{
+            background-color: $theme-color;
+        }
+        .skill-b{
+            background-color: rgba(0,0,0,0.07);
+        }
+    }
+
 }
