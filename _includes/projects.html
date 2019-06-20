@@ -1,9 +1,30 @@
 <div id="projects">
+    <section class="bg"></section>
     <h1 class="title">Projects  🙋🏻</h1>
     <div class="project-wrap">
     {% for _ in site.data.projects %}
         {% assign project = _.project[0] %}
-        <a href="{{ project.url }}">
+        <div class="prj-wrapper">
+            <div class="project row">
+                {% if project.image %}
+                <div class="img-wrap col-4 col-lg-12">
+                    <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
+                </div>
+                <div class="text-wrap col-8 col-lg-12">
+                {% else %}
+                <div class="text-wrap col-12">
+                {% endif %}
+                    <div class="title">{{ project.title }}</div>
+                    {% if project.subtitle %}
+                    <div class="subtitle">{{ project.subtitle }}</div>
+                    {% endif %}
+                    <div class="meta">
+                        {{ project.date }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="{{ project.url }}">
             <div class="proj-card">
                 {% if project.image %}
                 <div class="img-wrap"> 
@@ -29,7 +50,7 @@
                     <div class="description">{{ project.description }}</div>
                 </div>
             </div>
-        </a>
+        </a> -->
     {% endfor %}
     </div>
 </div>

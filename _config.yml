@@ -12,6 +12,11 @@ theme_settings :
     image : assets/img/naye0ng.jpeg
     username : Nayeong Kim
     description : "서버와 프론트, 모든 영역에 관심이 많은 주니어 웹 개발자입니다. <br>SSAFY에서 AWS, Django, Vue.js, CSS, SASS를 공부하고 있습니다."
+    skills : [  [ HTML5 & CSS, 85],
+                [Python & Django, 80], 
+                [Javascript & jQuery, 60],
+                [Vue, 65] 
+              ]
 
   # Icons
   icons :
