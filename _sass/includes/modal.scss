@@ -1,0 +1,54 @@
+.modal{
+    max-width:600px!important;
+    br{line-height: 2.0rem;}
+    .header{
+        padding: 30px 0;
+        margin-bottom:30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        p {
+            margin: 0;
+        }
+        .title{
+            margin-top: 5px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .summary{
+            font-size: 0.95rem;
+        }
+        .date{
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 0.8rem;
+        }
+    }
+    .content{
+        margin: auto 2%;
+        overflow: hidden;
+        img{
+            margin: auto 10%;
+            width: 80%;
+        }
+        .description{
+            font-size: 0.85rem;
+        }
+        .articles{
+            margin: 30px auto;
+            .article{
+                margin: 30px auto;
+                .title{
+                    position: relative;
+                    margin: 10px auto;
+                    font-size: 1.05rem; 
+                    font-weight: 600;
+                }
+                .description{
+                    margin: auto 15px!important;
+                    overflow: hidden;
+                    li {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}

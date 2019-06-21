@@ -15,7 +15,7 @@ theme_settings :
     skills : [  [ HTML5 & CSS, 85],
                 [Python & Django, 80], 
                 [Javascript & jQuery, 60],
-                [Vue, 65] 
+                [Vue, 65],
               ]
 
   # Icons

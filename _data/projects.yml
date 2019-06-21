@@ -1,20 +1,63 @@
 - project :
-  - print : True  
-    url : https://github.com/naye0ng/Grape-Theme 
+    print : True  
+    modal : True
+    url : https://github.com/naye0ng/Grape-Theme
+    image : home.png
     date : 2019.06.09 - 개발중
-    image : "portfolio.png" 
     title : Grape-Theme
-    subtitle : 포도를 연상케 하는 반응형 지킬 블로그 테마
-    skills : [HTML, CSS, JAVASCRIPT, ]
-    description : Grape-Theme를 만들기 전, Jekyll의 기본 테마를 적용하여 Github page기반의 블로그를 만들었었다.
-        <br/>그러나 기본 테마에서는 블로그에 추가하고 싶은 페이지(태그, 포트폴리오)를 제공하고 있지 않기에 직접 필요한 페이지를 추가해야만 했다.
-        <br/>블로그에 원하는 페이지를 붙이는 과정에서 Liquid Language와 SCSS의 사용법을 자연스럽게 익힐수 있었고,
-        이후 나만의 지킬 테마를 만들고 싶다는 욕심이 생겨 Grape-Theme를 만들게 되었다.
-        <hr>
-        남은 개발 과제
-        <br/>- project 부분 디자인 변경
-        <br/>- favicon.ico, search 기능
-        <br/>- OG Tag 추가
-        <br/>- profile 이미지 효과
-        <br/>- gem 배포
+    summary : 프로필 페이지를 지원하는 반응형 지킬 테마   
+    description : 올해 초, Jekyll의 기본 테마와 Github page를 이용해 블로그를 처음 시작했었다. 
+        기본 테마는 블로그에 글을 포스팅하는 데는 문제가 없었지만, 태그나 카테고리와 같은 기능은 지원하지 않았기에 직접 원하는 기능들을 추가할 수밖에 없었다.
+        <br/>블로그에 원하는 페이지를 붙이는 과정에서 Liquid Language와 SCSS의 사용법을 자연스럽게 익힐 수 있었고,
+        내가 원했던 모든 기능을 지원하는 Jekyll Theme를 만들어 다른 사람들과 나누고 싶어졌다.
+    contents :
+        - title : 1. 블로그 첫 화면 구성
+          image : home.png
+          description : <li>Responsive Layout</li>
+            <li>User Profile</li> 
+            <li>Tags</li> 
+            <li>Projects</li> 
+            <li>Pagination</li>
+        - title : 2. 태그 페이지
+          image : tags.png
+          description : <li>Responsive Layout</li> 
+            <li>Tags</li> 
+        - title : 3. 남은 개발 과제
+          image :
+          description : <li>project 부분 디자인 변경</li>
+            <li>favicon.ico, search 기능</li>
+            <li>OG Tag 추가</li>
+            <li>profile 이미지 효과</li>
+            <li>gem 배포</li>
 
+# - project :
+#     print : True  
+#     modal : True
+#     url : https://github.com/naye0ng/Grape-Theme
+#     image : home.png
+#     date : 2019.06.09 - 개발중
+#     title : Grape-Theme
+#     summary : 프로필 페이지를 지원하는 반응형 지킬 테마   
+#     description : 올해 초, Jekyll의 기본 테마와 Github page를 이용해 블로그를 처음 시작했었다. 
+#         기본 테마는 블로그에 글을 포스팅하는 데는 문제가 없었지만, 태그나 카테고리와 같은 기능은 지원하지 않았기에 직접 원하는 기능들을 추가할 수밖에 없었다.
+#         <br/>블로그에 원하는 페이지를 붙이는 과정에서 Liquid Language와 SCSS의 사용법을 자연스럽게 익힐 수 있었고,
+#         내가 원했던 모든 기능을 지원하는 Jekyll Theme를 만들어 다른 사람들과 나누고 싶어졌다.
+#     contents :
+#         - title : 1. 블로그 첫 화면 구성
+#           image : home.png
+#           description : <li>Responsive Layout</li>
+#             <li>User Profile</li> 
+#             <li>Tags</li> 
+#             <li>Projects</li> 
+#             <li>Pagination</li>
+#         - title : 2. 태그 페이지
+#           image : tags.png
+#           description : <li>Responsive Layout</li> 
+#             <li>Tags</li> 
+#         - title : 3. 남은 개발 과제
+#           image :
+#           description : <li>project 부분 디자인 변경</li>
+#             <li>favicon.ico, search 기능</li>
+#             <li>OG Tag 추가</li>
+#             <li>profile 이미지 효과</li>
+#             <li>gem 배포</li>

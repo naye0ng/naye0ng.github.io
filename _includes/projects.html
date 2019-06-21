@@ -1,56 +1,50 @@
 <div id="projects">
-    <section class="bg"></section>
-    <h1 class="title">Projects  🙋🏻</h1>
+    <h1 class="title">Projects 🙋🏻</h1>
     <div class="project-wrap">
-    {% for _ in site.data.projects %}
-        {% assign project = _.project[0] %}
+        {% assign id = -1 %}
+        {% for _ in site.data.projects %}
+        {% assign project = _.project %}
+        {% assign id = id | plus: 1 %}
         <div class="prj-wrapper">
             <div class="project row">
                 {% if project.image %}
-                <div class="img-wrap col-4 col-lg-12">
+                <div class="img-wrap col-4">
                     <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
                 </div>
-                <div class="text-wrap col-8 col-lg-12">
+                <div class="text-wrap col-8">
                 {% else %}
                 <div class="text-wrap col-12">
                 {% endif %}
-                    <div class="title">{{ project.title }}</div>
-                    {% if project.subtitle %}
-                    <div class="subtitle">{{ project.subtitle }}</div>
-                    {% endif %}
                     <div class="meta">
-                        {{ project.date }}
+                        <div class="date">{{ project.date }}</div>
+                    </div> 
+                    <div class="title">{{ project.title }}</div>
+                    <div class="summary">
+                    {% if project.summary.size > 20 %}
+                        {{ project.summary | strip_html | strip_newlines | truncatewords: 13, '...' }}
+                    {% else %}
+                        {{ project.summary }}
+                    {% endif %}
                     </div>
+                    {% if project.url or project.modal %}
+                    <div class="git-btn">
+                        {% if project.url %}
+                        {% assign url = project.url %}
+                        <a href="{{ url }}/subscription"><i class="far fa-eye"></i></a>
+                        <a href="{{ url }}"><i class="fas fa-star"></i></a>
+                        <a href="{{ url }}/fork"><i class="fas fa-code-branch"></i></a>
+                        {% endif %}
+                        {% if project.modal %}
+                        <a href="#{{ id }}" rel="modal:open" class="modal-btn"><i class="fas fa-plus"></i></a>
+                        <!-- Modal Box -->
+                        {% include modal.html %}
+                        <!-- Modal Box -->
+                        {% endif %}
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
-        <!-- <a href="{{ project.url }}">
-            <div class="proj-card">
-                {% if project.image %}
-                <div class="img-wrap"> 
-                    <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
-                </div>
-                {% endif %}
-                <div class="text-wrap {% if project.image %}{% endif %}">
-                    <div class="title-wrap">
-                        <div class="title">{{ project.title }}</div>
-                        {% if project.subtitle %}
-                        <div class="subtitle">: {{ project.subtitle }}</div>
-                        {% endif %}
-                    </div>
-                    <div class="meta">
-                            {{ project.date }}
-                            {% if project.skills %}
-                            &middot;
-                                {% for skill in project.skills %}
-                                <span>#{{ skill }}</span>
-                                {% endfor %}
-                            {% endif %}
-                        </div>
-                    <div class="description">{{ project.description }}</div>
-                </div>
-            </div>
-        </a> -->
-    {% endfor %}
+        {% endfor %}
     </div>
 </div>
