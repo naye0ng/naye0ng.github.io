@@ -30,34 +30,19 @@
             <li>profile 이미지 효과</li>
             <li>gem 배포</li>
 
-# - project :
-#     print : True  
-#     modal : True
-#     url : https://github.com/naye0ng/Grape-Theme
-#     image : home.png
-#     date : 2019.06.09 - 개발중
-#     title : Grape-Theme
-#     summary : 프로필 페이지를 지원하는 반응형 지킬 테마   
-#     description : 올해 초, Jekyll의 기본 테마와 Github page를 이용해 블로그를 처음 시작했었다. 
-#         기본 테마는 블로그에 글을 포스팅하는 데는 문제가 없었지만, 태그나 카테고리와 같은 기능은 지원하지 않았기에 직접 원하는 기능들을 추가할 수밖에 없었다.
-#         <br/>블로그에 원하는 페이지를 붙이는 과정에서 Liquid Language와 SCSS의 사용법을 자연스럽게 익힐 수 있었고,
-#         내가 원했던 모든 기능을 지원하는 Jekyll Theme를 만들어 다른 사람들과 나누고 싶어졌다.
-#     contents :
-#         - title : 1. 블로그 첫 화면 구성
-#           image : home.png
-#           description : <li>Responsive Layout</li>
-#             <li>User Profile</li> 
-#             <li>Tags</li> 
-#             <li>Projects</li> 
-#             <li>Pagination</li>
-#         - title : 2. 태그 페이지
-#           image : tags.png
-#           description : <li>Responsive Layout</li> 
-#             <li>Tags</li> 
-#         - title : 3. 남은 개발 과제
-#           image :
-#           description : <li>project 부분 디자인 변경</li>
-#             <li>favicon.ico, search 기능</li>
-#             <li>OG Tag 추가</li>
-#             <li>profile 이미지 효과</li>
-#             <li>gem 배포</li>
+- project :
+    print : True  
+    modal : True
+    url : OG-Tag-Preview-Chrome-Extension
+    image : og-tag.png
+    date : 2019.01.01 - 2019.01.03
+    title : OG-Tag-Preview-Chrome-Extension
+    summary : 현재 브라우저 탭의 url 정보를 받아와 해당 페이지를 크롤링하여 오픈 그래프 태그(OG Tag) 목록을 보여주는 크롬확장프로그램
+    description : 현재 브라우저 탭의 url 정보를 받아와 해당 페이지를 크롤링하여 오픈 그래프 태그(OG Tag) 목록을 보여줍니다.
+      '링크 미리보기' 기능은 네이버 블로그에서 링크를 삽입할 때 나타나는 미리보기 모양을 참고하여 만들었으며, 페이스북, 트위터, 카카오톡 등과 같은 소셜 페이지의 공유 미리보기 화면을 한눈에 볼 수 있도록 할 계획입니다.  
+    contents :
+        - title : 남은 개발 과제
+          image : 
+          description : <li>페이스북, 트위터, 카카오톡 등과 같은 소셜 페이지의 공유 미리보기 화면</li>
+            <li>og:title, og:description, og:image, og:url 외 다른 OG태그 포함</li> 
+            <li>(클립보드 형식으로)웹 개발자를 위한 OG태그 자동 생성</li> 
