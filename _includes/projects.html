@@ -11,21 +11,13 @@
                 <div class="img-wrap col-4 col-lg-12">
                     <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
                 </div>
-                <div class="text-wrap col-8 col-lg-12">
-                {% else %}
-                <div class="text-wrap col-12">
                 {% endif %}
+                <div class="text-wrap col-12">
                     <div class="meta">
                         <div class="date">{{ project.date }}</div>
                     </div> 
                     <div class="title">{{ project.title }}</div>
-                    <div class="summary">
-                    {% if project.summary.size > 20 %}
-                        {{ project.summary | strip_html | strip_newlines | truncatewords: 13, '...' }}
-                    {% else %}
-                        {{ project.summary }}
-                    {% endif %}
-                    </div>
+                    <div class="summary">{{ project.summary }}</div>
                     {% if project.url or project.modal %}
                     <div class="git-btn">
                         {% if project.url %}

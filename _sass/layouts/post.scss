@@ -1,5 +1,8 @@
 #post{
     @extend %page-padding;
+    #preview{
+        display: none;
+    }
     .post-header{
         padding-bottom : 60px;
         text-align: center;
