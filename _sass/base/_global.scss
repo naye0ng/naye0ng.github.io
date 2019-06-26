@@ -84,7 +84,10 @@ p{
 	}
 }
 ol, ul {
-	list-style: none;
+	li { font-size: 15px; }
+}
+em {
+	font-size: 15px;
 }
 a:link, a:visited, a:active, a:hover {
 	text-decoration: none; 

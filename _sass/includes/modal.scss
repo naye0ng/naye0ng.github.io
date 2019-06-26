@@ -1,5 +1,11 @@
 .modal{
     max-width:600px!important;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
+    -ms-box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
+
     br{line-height: 2.0rem;}
     .header{
         padding: 30px 0;
@@ -51,4 +57,7 @@
             }
         }
     }
+}
+.blocker{
+    background-color: rgba(0,0,0,0.2)!important;
 }

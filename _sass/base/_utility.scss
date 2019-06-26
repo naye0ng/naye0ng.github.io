@@ -4,28 +4,34 @@
         margin : 15px 0 10px 0;
     }
     ul {
-        list-style-position: inside;
+        list-style-position: outside;
         list-style-type: none;
         margin-top:2px;
         padding-left: 10px;
-    }
-    ol {
-        list-style-type: decimal;
-    }
-    li {
-        position: relative;
-        list-style-position: inside;
-        padding: 2px 0px 2px 30px;
+        li {
+            position: relative;
+            margin: 5px auto;
+            padding-left:30px!important;
+        }
     }
     ul li:before{
         content: "";
         position: absolute;
-        top: 12px;
+        top: 8px;
         left: 10px;
         width: 7px;
         height: 7px;
         background-color: $text-gray;
         border-radius: 50%;
+    }
+    ol {
+        list-style-type: decimal;
+        margin-left: 10px;
+        padding-left: 30px;
+        li {
+            position: relative;
+            margin: 5px auto;
+        }
     }
     a {
         color: #4F86C6;
@@ -51,8 +57,9 @@
     blockquote {
         background: #ced3d638;
         color: rgba(0,0,0,0.5);
-        padding: 10px 20px;
-        p { font-size: 0.9em; }
+        margin: 10px auto;
+        padding: 8px 20px;
+        * { font-size: 15px; }
     }
     .preview{
         display: none;
