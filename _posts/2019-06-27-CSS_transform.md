@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "CSS 에니메이션 - transform"
-subtitle: "CSS 에니메이션 효과 공부하기"
+title: "CSS 에니메이션 - 2D Transform"
+subtitle: "CSS 에니메이션 효과 공부하기 1"
 categories : CSS
 tags: [CSS]
 author: Nayeong Kim
@@ -14,7 +14,7 @@ CSS의 transform 속성을 사용하면 HTML 요소의 모양, 크기, 위치 �
 
 
 
-## Transform
+## 2D Transform
 
 CSS의 `transform` 속성을 사용하면 HTML 요소의 모양, 크기, 위치 등을 자유롭게 변화시킬 수 있다. 또한, HTML 객체를 움직이게 하거나 회전, 크기 및 각도를 한 번에 선언할 수 있다.
 
@@ -86,7 +86,7 @@ CSS의 좌표 체계에서의 기준점은 브라우저의 왼쪽 상단이 된�
 
 <br>
 
-#### d. skewX(), skewY() : 기울기 조절
+#### d. skew() : 기울기 조절
 
 - 주어진 각도만큼 x축 방향으로 기울인다.
 - 양수이면 x축의 양의 방향으로, 음수이면 x축의 방향으로 기울기가 조절된다.
