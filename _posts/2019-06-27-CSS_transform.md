@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "CSS 에니메이션 - 2D Transform"
-subtitle: "CSS 에니메이션 효과 공부하기 1"
+title: "CSS 애니메이션 1 - 2D Transform"
+subtitle: "CSS 애니메이션 효과 공부하기 1"
 categories : CSS
 tags: [CSS]
 author: Nayeong Kim
