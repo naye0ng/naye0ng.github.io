@@ -5,6 +5,7 @@
         margin-bottom: 60px;
     }
     p b{
+        // color: $theme-color;
         letter-spacing: -0.05rem;
         font-size: 1rem;
     }
@@ -45,7 +46,7 @@
         color: $theme-color;
     }
     .description{
-        font-size : 0.85rem;
+        font-size : 0.95rem;
     }
     #proj-wrap{
         .proj-title {

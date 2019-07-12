@@ -1,32 +1,28 @@
 <div id="{{ id }}" class="modal">
+  <div class="modal-background" onClick="close_modal()"></div>
+  <div class="modal-content">
+    <div class="close-modal" onClick="close_modal()">
+      <p>&times;</p>
+    </div>
     <div class="header">
-        <p class="date">{{ project.date }}</p>
-        <p class="title">{{ project.title }}</p>
-        <p class="summary">{{ project.summary }}</p>
+      <p class="date">{{ project.date }}</p>
+      <p class="title">{{ project.title }}</p>
+      <p class="summary">{{ project.summary }}</p>
     </div>
     <div class="content">
-        {% if project.image %}
-        <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
-        {% endif%}
-        <div class="description">
-            {{ project.description }}
-        </div>
-        <div class="articles">
-            {% for content in project.contents %}
-            <div class="article">
-                <div class="title">{{ content.title }}</div>
-                {% if content.image %}
-                <img src="{{ site.url }}/assets/project/{{ content.image }}" alt="">
-                {% endif%}
-                <div class="description">{{content.description }}</div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>    
+      {% if project.image %}
+      <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
+      {% endif%}
+      <div class="description">{{ project.description }}</div>
+      {% for content in project.contents %}
+      <div class="sub-content">
+        <div class="title">{{ content.title }}</div>
+        {% if content.image %}
+        <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="{{ content.title }}">
+        {% endif %}
+        <div class="description">{{ content.description }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
-
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-<!-- jQuery Modal -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />

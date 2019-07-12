@@ -12,11 +12,26 @@ theme_settings :
     image : assets/img/naye0ng.jpeg
     username : Nayeong Kim
     description : "서버와 프론트, 모든 영역에 관심이 많은 주니어 웹 개발자입니다. <br>SSAFY에서 AWS, Django, Vue.js, CSS, SASS를 공부하고 있습니다."
-    skills : [  [ HTML5 & CSS, 85],
-                [Python & Django, 80], 
-                [Javascript & jQuery, 60],
-                [Vue, 65],
-              ]
+    experience :
+      - start : 2017.11.23
+        end : 2017.11.24
+        experience : NAVER CAMPUS HACK DAY 2017<p style="font-weight:500;font-size:13px;">우수참가자 선정</p>
+      - start : 2018.06
+        end : 2018.12
+        experience : SOFTWARE MAESTRO 9기
+      - start : 2018.12 
+        end : 
+        experience : SSAFY 1기
+    skills : 
+      - skill : HTML5 & CSS
+        value : 85  
+      - skill : Javascript & jQuery
+        value : 65
+      - skill : Python & Django
+        value : 70
+      - skill : Vue
+        value : 60
+
 
   # Icons
   icons :
