@@ -33,16 +33,51 @@
 - project :
     print : True  
     modal : True
-    url : OG-Tag-Preview-Chrome-Extension
+    url : https://github.com/naye0ng/OG-Tag-Preview-Chrome-Extension
     image : og-tag.png
-    date : 2019.01.01 - 2019.01.03
+    date : 2019.01.01 - 2019.09.28
     title : OG-Tag-Preview-Chrome-Extension
     summary : 현재 브라우저 탭의 url 정보를 받아와 해당 페이지를 크롤링하여 오픈 그래프 태그(OG Tag) 목록을 보여주는 크롬확장프로그램
     description : 현재 브라우저 탭의 url 정보를 받아와 해당 페이지를 크롤링하여 오픈 그래프 태그(OG Tag) 목록을 보여줍니다.
       '링크 미리보기' 기능은 네이버 블로그에서 링크를 삽입할 때 나타나는 미리보기 모양을 참고하여 만들었으며, 페이스북, 트위터, 카카오톡 등과 같은 소셜 페이지의 공유 미리보기 화면을 한눈에 볼 수 있도록 할 계획입니다.  
     contents :
-        - title : 남은 개발 과제
+        - title : 추가 기능
           image : 
-          description : <li>페이스북, 트위터, 카카오톡 등과 같은 소셜 페이지의 공유 미리보기 화면</li>
-            <li>og:title, og:description, og:image, og:url 외 다른 OG태그 포함</li> 
-            <li>(클립보드 형식으로)웹 개발자를 위한 OG태그 자동 생성</li> 
+          description : 
+            <div class="checkbox checked">페이스북, 트위터, 라인 등 소셜 페이지 지원</div>
+            <div class="checkbox checked">title, description, image, url 외 twitter, facebook 오픈 그래프 태그 추가</div>
+            <div class="checkbox">웹 개발자를 위한 OG태그 자동 생성 및 복사</div>
+            <div class="checkbox">로딩 화면</div>
+
+- project :
+    print : True  
+    modal : True
+    url : https://github.com/naye0ng/Portfolio-Team3
+    image : intro.gif
+    date : 2019.07.08 - 2019.08.16
+    title : Hello Universe!
+    summary : 팀 및 개발자 포트폴리오 웹 블로그
+    description : Firebase 기반의 Vue로 만든 웹 블로그로 Front와 Backend 부분을 담당했습니다.
+      <br/>웹 로그, 관리자 페이지, 로그인, 게시판 등 다양한 기능 중 본인이 구현한 기능 위주 정리했으며, firebase로 배포를 진행했습니다.
+      <br>총 6주의 개발기간을 2주와 4주로 나눠서 작업했습니다. 프로젝트의 이해도를 높이기 위해 1차에서 맡은 기능을 이어서 개발하지 않았고, 다른 팀원이 개발했던 기능을 넘겨받거나 새로운 역할을 맡았습니다. 팀원간 원할한 코드 리뷰를 위해 <a class="demo" href="https://github.com/naye0ng/Portfolio-Team3/blob/master/README/%EA%B9%80%EB%82%98%EC%98%81.md">개발 일지</a>도 작성했습니다.
+      <br/>+ <a class="demo" href="https://hello-team3.firebaseapp.com">웹 사이트</a> 방문시 볼륨을 켜주세요. 음악이 나옵니다.🙌
+    contents :
+        - title : 1. 2019.07.08 ~ 2019.07.19 (2주)
+          image : gitRepo.gif
+          description :
+            <li>반응형 기본 레이아웃 구성</li> 
+            <li>git repository commit 그래프 구현</li> 
+            <li>웹 로그 수집 및 통계</li> 
+            <li>이미지 배너(반짝이는 별, 별똥별)</li> 
+        - title : 2. 2019.07.22 ~ 2019.08.16 (4주)
+          image : teamGit.gif
+          description : 
+            <li>firebase 연동 및 배포</li> 
+            <li>웹 사이트 회원 권한 구분</li> 
+            <li>관리자 페이지 구현</li> 
+            <li>오프라인 데이터베이스</li> 
+            <li>인트로 페이지(애니메이션)</li> 
+            <li>로딩 애니메이션 추가</li> 
+            <li>관리자 페이지 기능 추가(사용자 권한 요청 알림)</li> 
+            <li>github api 호출 횟수 제한 해결(캐싱)</li> 
+       

@@ -7,6 +7,12 @@
     width: 100%;
     height: 100%;
     overflow: auto;
+    a.demo{
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #8b51a3;
+        
+    }
     .modal-background{
         position: fixed;
         z-index: 9;
@@ -107,7 +113,24 @@
                     margin: auto 15px!important;
                     overflow: hidden;
                     li {
+                        position: relative;
                         font-size: 0.9rem;
+                    }
+                    .checkbox{
+                        font-size: 0.9rem;
+                        margin-bottom: 5px;
+                    }
+                    .checkbox::before{
+                        content: "";
+                        display: inline-block;
+                        margin-right: 8px;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 2px;
+                        background-color: #ddd;
+                    }
+                    .checkbox.checked::before{
+                        background: #8b51a3;
                     }
                 }
             }
