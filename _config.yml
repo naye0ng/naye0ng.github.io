@@ -26,11 +26,11 @@ theme_settings :
       - skill : HTML5 & CSS
         value : 85  
       - skill : Javascript & jQuery
-        value : 65
-      - skill : Python & Django
         value : 70
+      - skill : Python & Django
+        value : 65
       - skill : Vue
-        value : 60
+        value : 65
 
 
   # Icons
