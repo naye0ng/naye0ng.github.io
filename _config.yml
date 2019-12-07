@@ -24,11 +24,11 @@ theme_settings :
         experience : SSAFY 1기
     skills : 
       - skill : HTML5 & CSS
-        value : 85  
+        value : 80  
       - skill : Javascript & jQuery
         value : 70
       - skill : Python & Django
-        value : 65
+        value : 75
       - skill : Vue
         value : 65
 
