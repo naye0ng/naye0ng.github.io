@@ -28,7 +28,7 @@ theme_settings :
       - skill : Javascript & jQuery
         value : 85
       - skill : Python & Django
-        value : 8
+        value : 80
       - skill : Vue
         value : 85
 
